@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="378.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewController">
+   <children>
+      <AnchorPane prefHeight="381.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="321.0" fitWidth="600.0" layoutY="79.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/parking-portal-button.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnManagementLogIn" layoutX="349.0" layoutY="300.0" mnemonicParsing="false" onAction="#LoadManagement" prefHeight="28.0" prefWidth="202.0" text="Management Log in">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="cmbSelectVehicle" layoutX="56.0" layoutY="110.0" prefHeight="26.0" prefWidth="202.0" promptText="Select Vehicle" />
+            <ComboBox fx:id="cmbVehicleType" layoutX="56.0" layoutY="166.0" prefHeight="26.0" prefWidth="202.0" promptText="Vehicle Type" />
+            <ComboBox fx:id="cmbDriver" layoutX="56.0" layoutY="223.0" prefHeight="26.0" prefWidth="202.0" promptText="Driver" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="136.0" layoutY="22.0" prefHeight="46.0" prefWidth="392.0" text="Saman Rice Parking System">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnParkVehicle" layoutX="375.0" layoutY="174.0" mnemonicParsing="false" onAction="#goToPark" prefHeight="26.0" prefWidth="150.0" text="Park Vehicle" />
+            <Button fx:id="btnOnDeliveryShift" layoutX="375.0" layoutY="216.0" mnemonicParsing="false" onAction="#goToDilivery" prefHeight="26.0" prefWidth="150.0" text="On Dilivery Shift" />
+            <TextField fx:id="txtDateTime" layoutX="349.0" layoutY="108.0" prefHeight="46.0" prefWidth="202.0" />
+            <TextField fx:id="txtCount" layoutX="23.0" layoutY="268.0" prefHeight="90.0" prefWidth="265.0" />
+            <Label layoutX="65.0" layoutY="276.0" text="Your Parking Slot Number">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="58.0" layoutX="66.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="58.0" layoutX="73.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-valet-parking-100.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
