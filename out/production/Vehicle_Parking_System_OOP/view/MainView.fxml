@@ -18,22 +18,24 @@
                   <Image url="@../assets/parking-portal-button.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="btnManagementLogIn" layoutX="349.0" layoutY="300.0" mnemonicParsing="false" onAction="#LoadManagement" prefHeight="28.0" prefWidth="202.0" text="Management Log in">
+            <Button fx:id="btnManagementLogIn" layoutX="349.0" layoutY="313.0" mnemonicParsing="false" onAction="#LoadManagement" prefHeight="28.0" prefWidth="202.0" text="Management Log in">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Button>
-            <ComboBox fx:id="cmbSelectVehicle" layoutX="56.0" layoutY="110.0" prefHeight="26.0" prefWidth="202.0" promptText="Select Vehicle" />
-            <ComboBox fx:id="cmbVehicleType" layoutX="56.0" layoutY="166.0" prefHeight="26.0" prefWidth="202.0" promptText="Vehicle Type" />
-            <ComboBox fx:id="cmbDriver" layoutX="56.0" layoutY="223.0" prefHeight="26.0" prefWidth="202.0" promptText="Driver" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="136.0" layoutY="22.0" prefHeight="46.0" prefWidth="392.0" text="Saman Rice Parking System">
+            <ComboBox fx:id="cmbSelectVehicle" layoutX="132.0" layoutY="110.0" prefHeight="26.0" prefWidth="149.0" />
+            <ComboBox fx:id="cmbDriver" layoutX="134.0" layoutY="223.0" prefHeight="26.0" prefWidth="149.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="130.0" layoutY="22.0" prefHeight="46.0" prefWidth="392.0" text="Saman Parking System">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
             </Label>
-            <Button fx:id="btnParkVehicle" layoutX="375.0" layoutY="174.0" mnemonicParsing="false" onAction="#goToPark" prefHeight="26.0" prefWidth="150.0" text="Park Vehicle" />
-            <Button fx:id="btnOnDeliveryShift" layoutX="375.0" layoutY="216.0" mnemonicParsing="false" onAction="#goToDilivery" prefHeight="26.0" prefWidth="150.0" text="On Dilivery Shift" />
-            <TextField fx:id="txtDateTime" layoutX="349.0" layoutY="108.0" prefHeight="46.0" prefWidth="202.0" />
+            <Button fx:id="btnParkVehicle" layoutX="375.0" layoutY="202.0" mnemonicParsing="false" onAction="#goToPark" prefHeight="26.0" prefWidth="150.0" text="Park Vehicle" />
+            <Button fx:id="btnOnDeliveryShift" layoutX="375.0" layoutY="244.0" mnemonicParsing="false" onAction="#goToDilivery" prefHeight="26.0" prefWidth="150.0" text="On Dilivery Shift" />
+            <TextField fx:id="txtDateTime" layoutX="359.0" layoutY="125.0" prefHeight="46.0" prefWidth="182.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></TextField>
             <TextField fx:id="txtCount" layoutX="23.0" layoutY="268.0" prefHeight="90.0" prefWidth="265.0" />
             <Label layoutX="65.0" layoutY="276.0" text="Your Parking Slot Number">
                <font>
@@ -42,11 +44,20 @@
             </Label>
             <ImageView fitHeight="52.0" fitWidth="58.0" layoutX="66.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
             </ImageView>
-            <ImageView fitHeight="52.0" fitWidth="58.0" layoutX="73.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="46.0" fitWidth="42.0" layoutX="84.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/icons8-valet-parking-100.png" />
                </image>
             </ImageView>
+            <Label layoutX="29.0" layoutY="173.0" prefHeight="18.0" prefWidth="96.0" text="Vehicle Type " />
+            <TextField fx:id="txtVehicleType" layoutX="131.0" layoutY="169.0" prefHeight="26.0" prefWidth="150.0" />
+            <Label layoutX="24.0" layoutY="114.0" prefHeight="18.0" prefWidth="96.0" text="Select Vehicle " />
+            <Label layoutX="62.0" layoutY="227.0" prefHeight="18.0" prefWidth="42.0" text="Driver" />
+            <Label text="Label" />
+            <TextField fx:id="txtDate" alignment="CENTER" layoutX="373.0" layoutY="92.0" prefHeight="26.0" prefWidth="150.0">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
          </children></AnchorPane>
    </children>
 </AnchorPane>
