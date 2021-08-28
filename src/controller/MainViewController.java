@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import model.Driver;
 import model.Vehicle;
@@ -37,6 +39,7 @@ public class MainViewController {
     public TextField txtCount;
     public TextField txtVehicleType;
     public TextField txtDate;
+    public AnchorPane mainView;
 
     private int minute;
     private int hour;
@@ -158,5 +161,12 @@ public class MainViewController {
         stage.setScene(scene);
         stage.setTitle("Login");
         stage.show();
+    }
+
+    public void RefreshPage(ActionEvent actionEvent) throws IOException {
+        URL resource = getClass().getResource("../view/MainView.fxml");
+        Parent load = FXMLLoader.load(resource);
+        mainView.getChildren().clear();
+        mainView.getChildren().add(load);
     }
 }

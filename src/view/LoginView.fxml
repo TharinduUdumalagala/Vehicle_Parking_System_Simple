@@ -11,20 +11,10 @@
 
 <AnchorPane fx:id="manageViewContext" prefHeight="243.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginViewController">
    <children>
-      <TextField fx:id="txtUserName" layoutX="96.0" layoutY="98.0" prefHeight="26.0" prefWidth="219.0" promptText="User Name" />
-      <PasswordField fx:id="pwdPassword" layoutX="96.0" layoutY="138.0" prefHeight="26.0" prefWidth="219.0" promptText="Password" />
-      <Button fx:id="btnLogIn" layoutX="241.0" layoutY="187.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="26.0" prefWidth="73.0" text="Log In" />
-      <Button fx:id="btnCancel" layoutX="153.0" layoutY="187.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="26.0" prefWidth="74.0" text="Cancel" />
-      <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="60.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/icons8-male-user-48.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="60.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/icons8-password-48.png" />
-         </image>
-      </ImageView>
+      <TextField fx:id="txtUserName" layoutX="117.0" layoutY="97.0" prefHeight="26.0" prefWidth="219.0" />
+      <PasswordField fx:id="pwdPassword" layoutX="117.0" layoutY="138.0" prefHeight="26.0" prefWidth="219.0" />
+      <Button fx:id="btnLogIn" layoutX="261.0" layoutY="187.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="26.0" prefWidth="73.0" text="Log In" />
+      <Button fx:id="btnCancel" layoutX="172.0" layoutY="187.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="26.0" prefWidth="74.0" text="Cancel" />
       <ImageView fitHeight="43.0" fitWidth="42.0" layoutX="124.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/icons8-login-60.png" />
@@ -35,5 +25,7 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
+      <Label layoutX="41.0" layoutY="102.0" text="User Name" />
+      <Label layoutX="50.0" layoutY="142.0" text="Password" />
    </children>
 </AnchorPane>

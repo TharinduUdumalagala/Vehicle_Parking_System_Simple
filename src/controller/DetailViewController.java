@@ -74,7 +74,10 @@ public class DetailViewController {
     }
 
     public void LoadManagement(ActionEvent actionEvent) {
-        Stage stage = (Stage) openNewContent.getScene().getWindow();
-        stage.close();
+        try {
+            Stage stage = (Stage) openNewContent.getScene().getWindow();
+            stage.close();
+        } catch (Exception e) {
+        }
     }
 }
